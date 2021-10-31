@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+
+<body>
+    <div class="fixed w-60 h-screen p-4  bg-gray-100 -left-60 transition-all" id="side" > 
+        <div class="flex">
+            <div>
+                <div class="mr-8 material-icons cursor-pointer" id="close">
+                    menu
+                </div>
+            </div>
+            <div>
+                <a href="#">
+                    <img class="w-auto h-6"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/2560px-YouTube_Logo_2017.svg.png"
+                        alt="">
+                </a>
+            </div>
+        </div>
+
+
+        <div class="py-10">
+            <div class="flex py-2">
+                <div class="mr-8 material-icons">
+                        home
+                </div>
+                <div>Home</div>
+            </div>
+            <div class="flex py-2">
+                <div class="flex py-2">
+                    <div class="mr-8 material-icons">
+                            explore
+                    </div>
+                    <div>Explore</div>
+                </div>
+                
+            </div>
+            <div class="flex py-2">
+                <div class="flex py-2">
+                    <div class="mr-8 material-icons">
+                        subscriptions
+                    </div>
+                    <div>Subscriptions</div>
+                </div>
+            </div>
+            
+            <hr>
+        </div>
+
+        <div >
+            <div class="flex py-2">
+                <div class="mr-8 material-icons">
+                    video_library
+                </div>
+                <div>Library</div>
+            </div>
+            <div class="flex py-2">
+                <div class="flex py-2">
+                    <div class="mr-8 material-icons">
+                        history
+                    </div>
+                    <div>History</div>
+                </div>
+                
+            </div>
+            <div class="flex py-2">
+                <div class="flex py-2">
+                    <div class="mr-8 material-icons">
+                        smart_display
+                    </div>
+                    <div>Your videos</div>
+                </div>
+            </div>
+            <div class="flex py-2">
+                <div class="mr-8 material-icons">
+                    schedule
+                </div>
+                <div>Watch later</div>
+            </div>
+            <div class="flex py-2">
+                <div class="flex py-2">
+                    <div class="mr-8 material-icons">
+                        thumb_up_off_alt
+                    </div>
+                    <div>Liked videos</div>
+                </div>
+                
+            </div>
+            <div class="flex py-2">
+                <div class="flex py-2">
+                    <div class="mr-8 material-icons">
+                        expand_more
+                    </div>
+                    <div>Show more</div>
+                </div>
+            </div>
+            
+            <hr>
+        </div>
+    </div>
+
+    <nav class="bg-gray-100">
+        <div class="max-w-8xl mx-auto px-5 ">
+            <div class="flex justify-between items-center py-2">
+                <div class="mr-2">
+                    <div>
+                        <div class="mr-8 material-icons cursor-pointer" id="open">
+                            menu
+                        </div>
+                    </div>
+
+                </div>
+                <div class="mr-20">
+                    <a href="#">
+                        <img class="w-auto h-6"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/YouTube_Logo_2017.svg/2560px-YouTube_Logo_2017.svg.png"
+                            alt="">
+                    </a>
+                </div>
+                <div class="flex border flex-grow ">
+
+                    <input type="text" placeholder="Search..." class="flex-grow border py-2 p-1">
+
+                    <div class="p-2 material-icons">
+                        search
+                    </div>
+                   
+                </div>
+                <div class="material-icons mr-20">
+                    mic
+                </div>
+                <div class="flex gap-3">
+
+                    <div>
+                        <a href="#">
+                            <div class="material-icons"> 
+                                switch_video
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <div class="material-icons"> 
+                                apps
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <div class="material-icons">
+                                notifications
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <div class="material-icons">
+                                account_box
+                            </div>
+                        </a>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </nav>
+   
+</body>
+
+</html>
+
+<script>
+    let close= document.querySelector("#close");
+    let open= document.querySelector("#open");
+
+  
+    
+    close.addEventListener("click",closeNav);
+    function closeNav(){
+        document.getElementById("side").style.left="-100%"
+    }
+
+    open.addEventListener("click",openNav);
+    function openNav(){
+        document.getElementById("side").style.left="0";
+    }
+</script>

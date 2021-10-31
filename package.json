@@ -1,0 +1,22 @@
+{
+  "name": "assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "css-build":"tailwind build ./src/style.css -o ./build/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pummysh/assignment.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pummysh/assignment/issues"
+  },
+  "homepage": "https://github.com/pummysh/assignment#readme",
+  "dependencies": {
+    "tailwindcss": "^2.2.19"
+  }
+}
